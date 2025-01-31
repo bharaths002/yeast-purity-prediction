@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeast Purity Prediction</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon"/>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            color: #00796b;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #004d40;
+            font-size: 2.5em;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #00796b;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 12px;
+            margin: 5px 0 20px;
+            border: 2px solid #00796b;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #004d40;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #00796b;
+        }
+        h2 {
+            color: #004d40;
+            margin-top: 30px;
+            font-size: 2em;
+        }
+        .icon {
+            width: 40px;
+            vertical-align: middle;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #004d40;
+        }
+        .home-link {
+            margin-top: 20px;
+            font-size: 1.2em;
+            display: block;
+            color: #00796b;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Predict Yeast Purity <img src="https://cdn-icons-png.flaticon.com/512/5900/5900695.png" alt="Yeast Icon" class="icon"></h1>
+<a href="http://127.0.0.1:8000/" class="home-link">Go to Home</a>
+<form method="post" action="/get_purity/">
+    {% csrf_token %}
+    <label for="molasses_amount">Molasses Amount (in grams):</label>
+    <input type="text" id="molasses_amount" name="molasses_amount" value="{{ molasses_amount|default:'' }}" required>
+    <label for="grain_starch_amount">Grain Starch Amount (in grams):</label>
+    <input type="text" id="grain_starch_amount" name="grain_starch_amount" value="{{ grain_starch_amount|default:'' }}" required>
+    <label for="potato_starch_amount">Potato Starch Amount (in grams):</label>
+    <input type="text" id="potato_starch_amount" name="potato_starch_amount" value="{{ potato_starch_amount|default:'' }}" required>
+    <label for="water">Water (in liters):</label>
+    <input type="text" id="water" name="water" value="{{ water|default:'' }}" required>
+    <label for="nutrients_vitamins">Nutrients and Vitamins (in grams):</label>
+    <input type="text" id="nutrients_vitamins" name="nutrients_vitamins" value="{{ nutrients_vitamins|default:'' }}" required>
+    <label for="emulsifiers">Emulsifiers and Cutting Oils (in grams):</label>
+    <input type="text" id="emulsifiers" name="emulsifiers" value="{{ emulsifiers|default:'' }}" required>
+    <button type="submit">Predict</button>
+</form>
+
+{% if purity %}
+<h2>The predicted purity of yeast is {{ purity }}%</h2>
+{% endif %}
+
+<div class="note">
+    <p>Note: Ensure the values are accurate for a precise prediction.</p>
+</div>
+</body>
+</html>
