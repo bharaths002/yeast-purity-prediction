@@ -5,6 +5,7 @@ This project aims to predict the purity of yeast samples used in various industr
 The system allows users to input data related to yeast samples, and it uses a trained machine learning model to predict the purity of the sample based on specific features. This system is designed to help businesses involved in biotechnology or brewing optimize their processes by providing an automated purity prediction tool.
 
 Features
+
 User-Friendly Web Interface: A simple and intuitive interface to input yeast sample data and get predictions.
 
 Yeast Purity Prediction: The system uses an ML model to predict the purity of yeast samples based on input features such as temperature, pH levels, and other relevant factors.
@@ -94,10 +95,10 @@ User Authentication: Add authentication features to allow users to register, log
 
 Dashboard Enhancements: Improve the web dashboard to display more detailed analytics about yeast purity trends.
 
-Contributing
+#Contributing
 Feel free to fork the repository and submit pull requests. If you have any suggestions or improvements, please open an issue or contribute directly.
 
-License
+#License
 This project is open source and available under the MIT License.
 
 
