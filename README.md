@@ -95,10 +95,12 @@ User Authentication: Add authentication features to allow users to register, log
 
 Dashboard Enhancements: Improve the web dashboard to display more detailed analytics about yeast purity trends.
 
-#Contributing
+Contributing:
+
 Feel free to fork the repository and submit pull requests. If you have any suggestions or improvements, please open an issue or contribute directly.
 
-#License
+License:
+
 This project is open source and available under the MIT License.
 
 
