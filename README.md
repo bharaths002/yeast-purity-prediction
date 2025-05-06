@@ -1,10 +1,10 @@
-Yeast Purity Prediction System
-Overview
+**Yeast Purity Prediction System
+**Overview
 This project aims to predict the purity of yeast samples used in various industrial applications, such as fermentation processes, by analyzing and processing relevant data. Using a Machine Learning (ML) model trained on historical yeast sample data, the system predicts whether a yeast sample meets the required purity standards. The application is built using the Python Django framework and uses MySQL for database management.
 
 The system allows users to input data related to yeast samples, and it uses a trained machine learning model to predict the purity of the sample based on specific features. This system is designed to help businesses involved in biotechnology or brewing optimize their processes by providing an automated purity prediction tool.
 
-Features
+**Features
 
 User-Friendly Web Interface: A simple and intuitive interface to input yeast sample data and get predictions.
 
@@ -16,7 +16,7 @@ Django Framework: Built using Python and Django for fast development and scalabi
 
 Model Training: Machine Learning algorithms (e.g., decision trees, random forests) are used for training the prediction model with sample data.
 
-Technologies Used
+**Technologies Used
 Backend: Python, Django
 
 Frontend: HTML, CSS, JavaScript
@@ -86,7 +86,7 @@ Database Storage: The prediction result is stored in a MySQL database along with
 
 Web Interface: The user receives a prediction and can view details on past predictions via a simple dashboard.
 
-Future Enhancements
+**Future Enhancements
 Real-time Data Processing: Integrate real-time data collection from sensors (e.g., temperature, pH sensors) for automatic predictions.
 
 Model Improvement: Enhance the model by incorporating more features and using advanced algorithms (e.g., deep learning).
@@ -95,11 +95,11 @@ User Authentication: Add authentication features to allow users to register, log
 
 Dashboard Enhancements: Improve the web dashboard to display more detailed analytics about yeast purity trends.
 
-Contributing:
+**Contributing:
 
 Feel free to fork the repository and submit pull requests. If you have any suggestions or improvements, please open an issue or contribute directly.
 
-License:
+**License:
 
 This project is open source and available under the MIT License.
 
