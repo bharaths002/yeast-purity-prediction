@@ -84,8 +84,8 @@ python manage.py runserver
 📬 Contact
 Developer: Bharath
 Internship Organization: Shiash Info Solutions
-Email: your.email@example.com
-LinkedIn: linkedin.com/in/yourprofile
+Email: bharaths0218@gmail.com
+
 
 
 
