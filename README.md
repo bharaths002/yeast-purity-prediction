@@ -1,12 +1,12 @@
-# 🧫 Yeast Purity Prediction System
+#  Yeast Purity Prediction System
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Yeast Purity Prediction System** is a full stack web application developed during my internship at **Shiash Info Solutions**. The application uses machine learning to predict the purity of yeast samples based on various chemical and physical properties. This is particularly useful in biotechnology and fermentation-based industries, where yeast quality directly impacts production outcomes.
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
 - Predicts yeast purity using ML classification algorithms
 - Real-time web-based prediction system
@@ -16,7 +16,7 @@ The **Yeast Purity Prediction System** is a full stack web application developed
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Python, Django
 - **Frontend**: HTML, CSS, JavaScript
@@ -26,7 +26,7 @@ The **Yeast Purity Prediction System** is a full stack web application developed
 
 ---
 
-## 📊 Machine Learning Details
+##  Machine Learning Details
 
 - Data preprocessing: cleaning, normalization, feature selection
 - Algorithms tested: Logistic Regression, Random Forest, SVM
@@ -35,7 +35,7 @@ The **Yeast Purity Prediction System** is a full stack web application developed
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 
 1. User inputs yeast sample features via a web form
 2. Backend sends the data to the ML model
@@ -44,7 +44,7 @@ The **Yeast Purity Prediction System** is a full stack web application developed
 
 ---
 
-## 🧪 Sample Features Used for Prediction
+##  Sample Features Used for Prediction
 
 - Temperature
 - pH value
@@ -52,11 +52,9 @@ The **Yeast Purity Prediction System** is a full stack web application developed
 - Moisture level
 - Alcohol yield
 
-*Note: These are placeholder features for illustration; adjust based on your actual dataset.*
-
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ```bash
 # Clone the repository
@@ -81,7 +79,7 @@ python manage.py runserver
 
 
 
-📬 Contact
+Contact
 Developer: Bharath
 Internship Organization: Shiash Info Solutions
 Email: bharaths0218@gmail.com
@@ -89,11 +87,10 @@ Email: bharaths0218@gmail.com
 
 
 
-✅ Status
+Status
 Project: Completed
 Future Scope: Add real-time sensor integration and model retraining with new data.
 
 ---
 
-Let me know if you'd like me to generate a `requirements.txt` or help you set up the folder structure for uploading this project to GitHub.
 
